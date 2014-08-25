@@ -14,6 +14,9 @@
 
      :editor {"alt-w" [:editor.watch.watch-selection]
               "alt-shift-w" [:editor.watch.unwatch]
+              "pmeta--" [:window.zoom-out]
+              "pmeta-+" [:window.zoom-in]
+              "pmeta-0" [:window.zoom-reset]
               }
      :editor.clojure {"pmeta-right" [:paredit.grow.right]
                       "pmeta-left" [:paredit.grow.left]}}}
