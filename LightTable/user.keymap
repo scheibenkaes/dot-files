@@ -14,6 +14,7 @@
 
      :editor {"alt-w" [:editor.watch.watch-selection]
               "alt-shift-w" [:editor.watch.unwatch]
+              "ctrl-shift-alt-w" [:workspace.show]
               "pmeta--" [:window.zoom-out]
               "pmeta-+" [:window.zoom-in]
               "pmeta-0" [:window.zoom-reset]
