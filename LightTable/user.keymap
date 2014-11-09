@@ -18,6 +18,10 @@
               "pmeta--" [:window.zoom-out]
               "pmeta-+" [:window.zoom-in]
               "pmeta-0" [:window.zoom-reset]
+              "ctrl-n" [:navigate-workspace]
+              "ctrl-shift-f" [:smart-indent-selection]
+              "ctrl-shift-e" [:clear-inline-results]
               }
      :editor.clojure {"pmeta-right" [:paredit.grow.right]
-                      "pmeta-left" [:paredit.grow.left]}}}
+                      "pmeta-left" [:paredit.grow.left]
+                      }}}
