@@ -1,12 +1,10 @@
-{:user {:plugins [[lein-midje "3.1.1"]
-                  [lein-ancient "0.5.4"]
-                  [lein-marginalia "0.7.1"]
-                  [lein-droid "0.3.0-beta4"]
-                  [com.cemerick/austin "0.1.5"]
-                  [cider/cider-nrepl "0.8.0-SNAPSHOT"]]
-        :dependencies [[clj-stacktrace "0.2.7"]]
+{:user {:plugins [[lein-ancient "0.6.10"]]
+        :signing {:gpg-key "F2C8C71C"}
+        :dependencies [[clj-stacktrace "0.2.8"]]
         :injections [(let [orig (ns-resolve (doto 'clojure.stacktrace require)
                                             'print-cause-trace)
                            new (ns-resolve (doto 'clj-stacktrace.repl require)
                                            'pst)]
-                       (alter-var-root orig (constantly (deref new))))]}}
+                       (alter-var-root orig (constantly (deref new))))]}
+
+ :repl {:dependencies [[org.clojure/tools.nrepl "0.2.12"]]}}
